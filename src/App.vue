@@ -5,8 +5,21 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+
+      
   </div>
 </template>
+
+
+<script>
+  export default {
+    data () {
+      return {
+        radio: '1'
+      };
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
