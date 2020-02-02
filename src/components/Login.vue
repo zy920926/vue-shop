@@ -51,7 +51,7 @@ export default {
             this.$refs.loginFormRef.resetFields();
         },
         login(){
-            this.$refs.loginFormRef.validate(async (valid)=>{
+            this.$refs.loginFormRef.validate(async (valid)=>{ //loginFormRef.validateelement-ui  form的api
                 if(!valid) return;
                 const {data:res} = await this.$http.post("login",this.loginForm)
                

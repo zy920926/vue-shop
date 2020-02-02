@@ -33,7 +33,8 @@ module.exports = {
         https: false,
         hotOnly: false,
         // proxy: {
-
+            
+            
         // }, // 设置代理
         before: app => { }
     },
