@@ -9,7 +9,11 @@ import "./assets/css/global.css"
 import "./assets/fonts/iconfont.css"
 
 //按需引入element-ui组件
-import {MessageBox,Dialog,Pagination,Tooltip,Switch,Table,TableColumn,Row,Col,Card,Form,FormItem,Button,Input,Message,Container,Header,Aside,Main,Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem} from "element-ui"
+import {Option,Select,Tree,Tag,MessageBox,Dialog,Pagination,Tooltip,Switch,Table,TableColumn,Row,Col,Card,Form,FormItem,Button,Input,Message,Container,Header,Aside,Main,Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem} from "element-ui"
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Tree)
+Vue.use(Tag)
 Vue.prototype.$confirm = MessageBox.confirm
 Vue.use(Dialog)
 Vue.use(Pagination)
