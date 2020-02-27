@@ -68,7 +68,7 @@ export default {
     this.getMenuList()
   },
   methods:{
-    //推出登录事件
+    //退出登录事件
     logout(){
       window.sessionStorage.clear()
       this.$router.push("/login")

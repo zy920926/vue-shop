@@ -9,7 +9,8 @@ import "./assets/css/global.css"
 import "./assets/fonts/iconfont.css"
 
 //按需引入element-ui组件
-import {Option,Select,Tree,Tag,MessageBox,Dialog,Pagination,Tooltip,Switch,Table,TableColumn,Row,Col,Card,Form,FormItem,Button,Input,Message,Container,Header,Aside,Main,Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem} from "element-ui"
+import {Cascader,Option,Select,Tree,Tag,MessageBox,Dialog,Pagination,Tooltip,Switch,Table,TableColumn,Row,Col,Card,Form,FormItem,Button,Input,Message,Container,Header,Aside,Main,Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem} from "element-ui"
+Vue.use(Cascader)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Tree)
@@ -50,7 +51,12 @@ axios.interceptors.request.use(config=>{
 Vue.prototype.$http = axios
 
 
+//导入vue-table-with-tree-grid插件
+import TreeTable from "vue-table-with-tree-grid"
+Vue.component('tree-table',TreeTable)
+
 Vue.config.productionTip = false
+
 new Vue({
   router,
   store,
